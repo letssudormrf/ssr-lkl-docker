@@ -57,4 +57,4 @@ export LKL_HIJACK_NET_NETMASK6_LEN="64"
 export LKL_HIJACK_NET_GATEWAY6="fd90:a:b:c::1"
 export LKL_HIJACK_OFFLOAD="0x9983"
 
-python /shadowsocksr/server.py m
+python /shadowsocksr/server.py m>> ssserver.log 2>&1
