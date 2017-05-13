@@ -46,7 +46,7 @@ done < /root/mudb_port.txt
 
 export LD_PRELOAD="/root/liblkl-hijack.so"
 export LKL_HIJACK_NET_QDISC="root|fq"
-export LKL_HIJACK_SYSCTL="net.ipv4.tcp_congestion_control=bbr;net.ipv4.tcp_wmem=4096 16384 30000000"
+export LKL_HIJACK_SYSCTL="net.ipv4.tcp_congestion_control=bbr;net.ipv4.tcp_wmem=4096 16384 100000000"
 export LKL_HIJACK_NET_IFTYPE="tap"
 export LKL_HIJACK_NET_IFPARAMS="tap0"
 export LKL_HIJACK_NET_IP="10.99.254.2"
